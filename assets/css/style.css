@@ -1,3 +1,9 @@
 .jumbotron{
     background-color: red;
+    margin: auto;
+    width: 50%;
+}
+
+.col {
+    text-align: center;
 }

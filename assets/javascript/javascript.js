@@ -11,3 +11,22 @@ const questionList = [
     {Question:"The total surface area of two human lungs have a surface area of approximately 70 square metres.",Answer: True},
 ];
 
+let currentQuestion = "";
+let currentAnswer = "";
+let alreadyGene = [];
+
+function QuestionGenerator(){
+    let ind = Math.floor(Math.random()*questionList.length );
+    while(alreadyGene.includes(ind)){
+        ind = Math.floor(Math.random()*questionList.length );
+    }
+    alreadyGene.push(ind);
+    return questionList[ind];
+}
+
+
+
+
+
+
+ 
